@@ -11,7 +11,7 @@ namespace TalentSphere.Models
 
         public int UserID { get; set; }
 
-        public User User { get; set; }
+        public virtual User User { get; set; }
 
         public string Action { get; set; }
 
@@ -21,6 +21,8 @@ namespace TalentSphere.Models
 
         public DateTime CreatedAt { get; set; }
 
-        public DateTime? UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; } 
+
+        public Boolean IsDeleted { get; set; }
     }
 }
